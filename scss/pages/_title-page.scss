@@ -1,0 +1,76 @@
+// title page
+.title-page{
+  padding-top: 50px;
+  height: 100vh;
+  background-color: rgba(255, 165, 0, 0.48);
+  &__container{
+    .uni-title{
+      font-family: Montserrat;
+      font-size: 1.5rem;
+      color: #000;
+      text-align: center;
+      font-weight: 100;
+      margin-bottom: 101px;
+      line-height: 115%;
+    }
+    .document-title{
+      font-family: "Arial Black";
+      font-size: 2rem;
+      color: #000;
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 101px;
+    }
+    .course-title{
+      font-family: MingLiU_HKSCS-ExtB;
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: 900;
+      color: #6e00ff;
+      text-decoration: underline;
+      line-height: 150%;
+    }
+    &__list{
+      li{
+        padding-left: 10px;
+        cursor: pointer;
+        width: auto;
+        max-width: 170px;
+        &:not(:first-child){
+          margin-top: 15px;
+        }
+        &:hover{
+          a{
+            color: red;
+            border-bottom: 1px solid #000;
+          }
+        }
+        a{
+          font-family: "Arial Black";
+          font-size: 1.3rem;
+          color: #000;
+          text-transform: uppercase;
+          border-bottom: 1px solid transparent;
+          transition: all .3s ease-in-out;
+          &:active{
+            color: #6e00ff;
+          }
+        }
+      }
+    }
+    .student-info{
+      text-align: right;
+      h3{
+        font-size: 1.1rem;
+        color: #000;
+        line-height: 130%;
+      }
+    }
+    .city-name{
+      font-size: 1rem;
+      margin-top: 100px;
+      text-align: center;
+      text-decoration: line-through;
+    }
+  }
+}
