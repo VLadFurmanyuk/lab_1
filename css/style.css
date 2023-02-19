@@ -45,11 +45,17 @@ body {
   width: 1450px;
   margin: 0 auto;
 }
+@media (max-width: 1450px) {
+  .container {
+    width: 100%;
+  }
+}
 
 .title-page {
   padding-top: 50px;
   height: 100vh;
   background-color: rgba(255, 165, 0, 0.48);
+  position: relative;
 }
 .title-page__container .uni-title {
   font-family: Montserrat;
@@ -115,6 +121,11 @@ body {
   margin-top: 100px;
   text-align: center;
   text-decoration: line-through;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 body {

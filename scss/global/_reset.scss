@@ -42,4 +42,7 @@ body{
 .container{
   width: 1450px;
   margin: 0 auto;
+  @media (max-width: 1450px){
+    width: 100%;
+  }
 }
